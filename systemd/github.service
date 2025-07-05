@@ -3,6 +3,8 @@ Description=GithubActions
 
 [Service]
 Type=exec
+Restart=always
+RestartSec=60s
 User=doni
 Group=doni
 ExecStart=%h/actions-runner/run.sh
